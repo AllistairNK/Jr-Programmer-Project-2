@@ -5,6 +5,7 @@ using UnityEngine;
 public class Animal : MonoBehaviour
 {
     protected Animator playerAnim { get; private set; }
+    // ENCAPSULATION
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +18,7 @@ public class Animal : MonoBehaviour
         
     }
     public virtual void PlayBark()
+    // ABSTRACTION
     {
         playerAnim.Play("Base Layer.Bark", 0, 0);
     }
